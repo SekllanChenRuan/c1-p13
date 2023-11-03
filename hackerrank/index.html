@@ -22,6 +22,44 @@
       src="..\images\hackerrank-javascript-dates-d6-answer.png"
       alt="image of the answer I submitted for the HackerRank problem 'Day 6: JavaScript Dates' "
     />
+    <h2>Explaination:</h2>
+    <p>
+      I created an array named daysOfWeek that held the string names for the
+      days of the week:
+      <strong
+        >["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday",
+        "Saturday"]</strong
+      >
+      .
+    </p>
+    <p>
+      Then I created a new date object with the dateString parameter to get a
+      string value representation of the date and assigned it to a const
+      variable named <strong>currentDate</strong>.
+    </p>
+    <p>
+      From there I decided to use <strong>CurrentDate.getDay()</strong> to get
+      the value of the day of the week with the values in the range of 0-6.
+    </p>
+    <p>
+      Using the value I got from the <strong>.getDay()</strong> method for our
+      <strong>CurrentDate</strong> object, I used it as an index to match my
+      <strong>daysOfWeek[]</strong> array.
+    </p>
+    <p>
+      For Example: if
+      <strong>CurrentDate.getDay()</strong>
+      gave me the value 0, then
+      <strong>daysOfWeek[0]</strong> would be the string value
+      <strong>"Sunday"</strong>.
+    </p>
+    <p>
+      So I can just assign the string value of the array index to the dayName
+      variable that was initialized at the beginning and return
+      <strong>dayName</strong> and it will have the day of the week like
+      "Sunday" returned.
+    </p>
+
     <h2>Test Case Results:</h2>
     <img
       src="..\images\hackerrank-javascript-dates-d6-test-pass.png"

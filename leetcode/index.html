@@ -17,5 +17,14 @@
       src="..\images\leetcode-2620-counter.png"
       alt="image of answer to leetcode problem 2620. Counter"
     />
+    <h2>Explaination:</h2>
+    <p>
+      The first call returns n and then the value of n is incremented by the
+      <strong>return n++;</strong>. For the second call it will return the
+      previous incremented value that wasnt returned: <strong>n + 1</strong>,
+      then it will increment again due to <strong>return n++;</strong> and the
+      incremented value would be <strong>n + 2</strong> now but it will only be
+      returned in the next call. This process continues for every new call.
+    </p>
   </body>
 </html>
